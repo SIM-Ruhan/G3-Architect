@@ -193,6 +193,18 @@ max-width: 1440px;
 }
 /* responsive media query */
 @media screen and (max-width:576px){
+  .nav-links{
+    margin: 10px 5px 10px 5px;
+  }
+  .nav-item:hover{
+    color:blue;
+  }
+  .nav-item{
+   
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
 .navbar, .navlinks, .teams{
   flex-direction: column;
 }  
@@ -202,11 +214,27 @@ max-width: 1440px;
 gap: 20px;
 }
 .our-features{
-  margin-left: 20px;
+ margin: 0;
+}
+.features{
+  margin: 0 auto;
+}
+.section-title{
+  font-size: 2rem;
+  margin-bottom: 24px;
 }
 .sponsor-company{
   justify-items: center;
   gap: 50px;
+}
+#mohila, .achivement{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#badge{
+  padding: 15px 14px;
+margin: 30px auto;
 }
 }
 /* medium devices */
