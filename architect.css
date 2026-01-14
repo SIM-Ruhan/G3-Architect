@@ -195,7 +195,7 @@ margin-bottom: 10px;
 .sponsor-company img{
   filter: grayscale(100%);
 }
-/* responsive media query */
+/* responsive media query
 @media screen and (max-width:576px){
   .nav-links{
     margin: 10px 5px 10px 5px;
@@ -240,7 +240,115 @@ gap: 20px;
   padding: 15px 14px;
 margin: 30px auto;
 }
+} */
+ @media screen and (max-width:576px){
+
+/* ---------- Global spacing fix ---------- */
+main > section{
+  margin: 60px 0;
+  padding: 0 16px;
 }
+
+/* ---------- Navbar ---------- */
+.navbar{
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-links{
+  flex-direction:row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item{
+  margin: 0;
+}
+
+.nav-link{
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+
+}
+
+/* ---------- Banner ---------- */
+.banner-content{
+  padding-top: 50px;
+}
+
+.banner-title{
+  font-size: 2.2rem;
+}
+
+.banner-description{
+  font-size: 0.95rem;
+}
+
+/* ---------- Team section ---------- */
+.teams{
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-img-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.our-features{
+  margin: 0;
+  text-align: center;
+}
+
+/* ---------- Features section ---------- */
+.features{
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section-title{
+  font-size: 2rem;
+}
+
+#mohila{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mohila img{
+  width: 100%;
+}
+
+#badge{
+  position: static;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* ---------- Facts section ---------- */
+.fact-container{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.fact-card{
+  width: 200px;
+  height: 200px;
+}
+
+/* ---------- Sponsors ---------- */
+.sponsor-company{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+}
+
 /* medium devices */
 @media screen and (min-width:577px) and (max-width:992px) {
   .teams{
